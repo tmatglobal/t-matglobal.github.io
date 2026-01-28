@@ -1362,3 +1362,63 @@ html {
     0 18px 60px rgba(0,0,0,0.55),
     0 0 55px rgba(255,180,60,0.45);
 }
+/* ===== Mobile Nav Visibility Fix (SAFE) ===== */
+header, nav {
+  position: relative;
+  z-index: 9999; /* keep above hero/earth */
+}
+
+.navbar { /* if you have a wrapper like .navbar */
+  position: fixed;            /* keep visible on scroll */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Prevent hero from covering the navbar */
+.hero, .hero-section, #hero {
+  padding-top: 80px; /* navbar height space */
+}
+
+/* If any parent has overflow hidden, nav can get clipped */
+body, html {
+  overflow-x: hidden;
+}
+/* ===== Responsive Menu ===== */
+.nav-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .nav-toggle { display: block; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 12px;
+    right: 12px;
+    background: rgba(0,0,0,0.9);
+    border: 1px solid rgba(255, 170, 0, 0.25);
+    border-radius: 14px;
+    padding: 12px;
+  }
+
+  .nav-links.show { display: block; }
+
+  .nav-links a {
+    display: block;
+    padding: 12px 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+}

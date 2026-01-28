@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="T-Mat Global - Combining customer-centric business models with technology innovation.">
     <title>T-Mat Global | Future of IT</title>
     <link rel="stylesheet" href="style.css">
@@ -24,7 +25,6 @@
   <img src="assets/logo.png" alt="T-Mat Global Logo" class="logo-image">
   <span>T-Mat Global</span>
 </div>
-
 
 
         <ul class="nav-links">
@@ -624,6 +624,24 @@
   })();
 </script>
 
-    
+    <script>
+  const btn = document.querySelector('.nav-toggle');
+  const links = document.getElementById('navLinks');
+
+  if (btn && links) {
+    btn.addEventListener('click', () => {
+      links.classList.toggle('show');
+      const open = links.classList.contains('show');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.textContent = open ? '✕' : '☰';
+    });
+
+    // close menu on click
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => links.classList.remove('show'));
+    });
+  }
+</script>
+
 </body>
 </html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.t-matglobal.com/sitemap.xml
+RSS: https://www.t-matglobal.com/rss.xml

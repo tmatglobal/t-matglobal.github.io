@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>T-Mat Global – Cloud, DevOps & AI Engineering</title>
+    <link>https://www.t-matglobal.com</link>
+    <description>
+      Updates, insights, and engineering perspectives from T-Mat Global
+      on Cloud, DevOps, Platform Engineering, and AI Infrastructure.
+    </description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Jan 2026 00:00:00 GMT</lastBuildDate>
+
+    <item>
+      <title>Welcome to T-Mat Global</title>
+      <link>https://www.t-matglobal.com</link>
+      <description>
+        T-Mat Global is a global technology company delivering cloud engineering,
+        DevOps automation, platform engineering, and AI-driven solutions.
+      </description>
+      <pubDate>Mon, 29 Jan 2026 00:00:00 GMT</pubDate>
+      <guid>https://www.t-matglobal.com#intro</guid>
+    </item>
+
+  </channel>
+</rss>

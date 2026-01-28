@@ -1504,3 +1504,40 @@ body, html {
     background: rgba(234,148,1,0.15);
   }
 }
+/* ===== FIX: hamburger visible but not clickable ===== */
+.navbar {
+  position: fixed;      /* stay on top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;       /* higher than hero */
+}
+
+.nav-toggle {
+  position: relative;
+  z-index: 999999;      /* ensure button gets taps */
+  pointer-events: auto;
+}
+
+/* If any hero overlay is blocking taps */
+.hero, .hero-section, #hero,
+.earth, .earth-container,
+.hero-bg, .bg-overlay, .overlay {
+  pointer-events: none; /* allow clicks through */
+}
+
+/* Give page space under fixed navbar */
+body {
+  padding-top: 72px;
+}
+.hero::before, .hero::after,
+.hero-section::before, .hero-section::after {
+  pointer-events: none;
+}
+#navLinks {
+  position: absolute;
+  z-index: 999999;
+}
+#navLinks.show {
+  pointer-events: auto;
+}

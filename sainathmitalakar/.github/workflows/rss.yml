@@ -1,0 +1,35 @@
+name: Generate RSS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4 lxml
+
+      - name: Generate RSS
+        run: python scripts/generate_rss.py
+
+      - name: Commit and push RSS
+        run: |
+          git config user.name "Sainath Mitalakar"
+          git config user.email "sainath8855@gmail.com"
+          git add rss.xml
+          git commit -m "Auto-update RSS feed" || echo "No changes"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

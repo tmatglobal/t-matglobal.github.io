@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://sainathmitalakar.github.io/sitemap.xml  
+

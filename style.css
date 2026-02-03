@@ -1558,3 +1558,23 @@ body {
     height: 240px;
   }
 }
+
+/* Brand Title – Gold Finish */
+.brand-logo span {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  background: linear-gradient(135deg, #ffdf8c, #d4a73c, #b8860b);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Soft glow for premium feel */
+  text-shadow:
+    0 0 8px rgba(245, 210, 122, 0.25),
+    0 0 18px rgba(201, 151, 44, 0.15);
+
+  margin-left: 10px;
+}

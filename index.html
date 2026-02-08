@@ -12,7 +12,6 @@
 
 
 <meta name="keywords" content="
-<meta name="keywords" content="
 top IT company in India,
 top IT startup in India,
 IT services company India,
@@ -349,6 +348,7 @@ Business Analytics,
     </div>
   </div>
 </section>
+
 <!-- 5. Policies -->
 <section id="policies">
   <h2 class="section-title">Policies & Guidelines</h2>
@@ -360,58 +360,71 @@ Business Analytics,
       trust and compliance across all engagements.
     </p>
 
-    <a href="#" class="policy-link">
-      <span class="icon">📄</span>
-      Responsible Vulnerability Disclosure Policy
-      <span class="policy-meta">(PDF)</span>
-    </a>
+    <a href="policies/index.html" class="policy-link">
+  <span class="icon">📄</span>
+  View Policies & Guidelines
+</a>
   </div>
 </section>
 
-   <!-- 6. Careers -->
+<!-- 6. Careers -->
 <section id="careers">
   <h2 class="section-title">Work With Us</h2>
+
+  <p class="section-subtitle">
+    We’re always looking for passionate people who want to build meaningful products and grow with us.
+  </p>
 
   <div class="careers-grid">
 
     <div class="dept-card">
       <h3>Engineering & Technology</h3>
-      <p>Creates unprecedented impact, building products with top-notch technology stack and have the potential to impact millions of users.</p>
+      <p>
+        Build scalable systems, modern products, and infrastructure that power real businesses.
+      </p>
       <a class="apply-btn"
-         href="mailto:sainath8855@gmail.com?subject=Application%20-%20Engineering%20%26%20Technology&body=Hi%20T-Mat%20Global%20Team,%0A%0AI%20am%20interested%20in%20Engineering%20%26%20Technology.%0A%0AName:%0ALocation:%0AExperience:%0APortfolio/LinkedIn:%0A%0AResume%20attached.%0A">
+         href="mailto:hr@t-matglobal.com?subject=Application%20-%20Engineering%20%26%20Technology">
         Apply Now
       </a>
     </div>
 
     <div class="dept-card">
-      <h3>Talent Acquisition, Finance & HR</h3>
-      <p>Team brings the right talent, taking care of accounting and maintaining healthy culture in the organization.</p>
+      <h3>Talent, Finance & HR</h3>
+      <p>
+        Build teams, manage operations, and help shape a strong, healthy company culture.
+      </p>
       <a class="apply-btn"
-         href="mailto:sainath8855@gmail.com?subject=Application%20-%20Talent%20Acquisition%20%2F%20Finance%20%26%20HR&body=Hi%20T-Mat%20Global%20Team,%0A%0AI%20am%20interested%20in%20Talent%20Acquisition,%20Finance%20%26%20HR.%0A%0AName:%0ALocation:%0AExperience:%0ALinkedIn:%0A%0AResume%20attached.%0A">
+         href="mailto:hr@t-matglobal.com?subject=Application%20-%20Talent%20%2F%20Finance%20%26%20HR">
         Apply Now
       </a>
     </div>
 
     <div class="dept-card">
       <h3>Sales & Marketing</h3>
-      <p>Team responsible to enhance sales and profits by supplying products that our customers need and building long-term rapport with stakeholders.</p>
+      <p>
+        Drive growth, partnerships, and long-term customer relationships across global markets.
+      </p>
       <a class="apply-btn"
-         href="mailto:sainath8855@gmail.com?subject=Application%20-%20Sales%20%26%20Marketing&body=Hi%20T-Mat%20Global%20Team,%0A%0AI%20am%20interested%20in%20Sales%20%26%20Marketing.%0A%0AName:%0ALocation:%0AExperience:%0ALinkedIn:%0A%0AResume%20attached.%0A">
+         href="mailto:hr@t-matglobal.com?subject=Application%20-%20Sales%20%26%20Marketing">
         Apply Now
       </a>
     </div>
 
     <div class="dept-card">
-      <h3>Legal</h3>
-      <p>Ensure integrity through compliance and governance, Team tackle some of the most important issues facing the technology industry today. </p>
+      <h3>Legal & Compliance</h3>
+      <p>
+        Ensure governance, compliance, and risk management as we scale responsibly.
+      </p>
       <a class="apply-btn"
-         href="mailto:sainath8855@gmail.com?subject=Application%20-%20Legal&body=Hi%20T-Mat%20Global%20Team,%0A%0AI%20am%20interested%20in%20Legal.%0A%0AName:%0ALocation:%0AExperience:%0ALinkedIn:%0A%0AResume%20attached.%0A">
+         href="mailto:hr@t-matglobal.com?subject=Application%20-%20Legal">
         Apply Now
       </a>
     </div>
 
   </div>
 </section>
+
+
 <!-- Tool Ecosystem Orbit -->
 <section id="tool-orbit" class="tool-orbit">
   <h2 class="section-title">Our Ecosystem</h2>
@@ -831,6 +844,30 @@ Business Analytics,
 
   </ul>
 </nav>
+
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value || 'Website Enquiry';
+    const message = document.getElementById('message').value;
+
+    const mailTo = `mailto:sainath.mitalakar1@t-matglobal.com
+      ?subject=${encodeURIComponent(subject)}
+      &body=${encodeURIComponent(
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone}\n\n` +
+        `Message:\n${message}`
+      )}`;
+
+    window.location.href = mailTo;
+  });
+</script>
 
 
 </body>

@@ -1,0 +1,120 @@
+/* ================================
+   Policies & Guidelines Page
+   ================================ */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  line-height: 1.8;
+}
+
+/* Main Container */
+.policies {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+/* Page Title */
+.policies h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #f0f6fc;
+}
+
+/* Intro Text */
+.policies > p {
+  font-size: 1.1rem;
+  color: #c9d1d9;
+  margin-bottom: 32px;
+}
+
+/* Navigation Links */
+.policy-nav {
+  margin-bottom: 32px;
+}
+
+.policy-nav a {
+  display: inline-block;
+  margin: 6px 12px 6px 0;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  color: #58a6ff;
+  text-decoration: none;
+  border: 1px solid rgba(88,166,255,0.35);
+  border-radius: 20px;
+  transition: all 0.25s ease;
+}
+
+.policy-nav a:hover {
+  background: rgba(88,166,255,0.12);
+  border-color: #58a6ff;
+}
+
+/* Section Styling */
+.policies section {
+  margin-top: 48px;
+}
+
+/* Section Headings */
+.policies h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #f0f6fc;
+}
+
+/* Paragraphs */
+.policies p {
+  font-size: 1rem;
+  color: #c9d1d9;
+  margin-bottom: 16px;
+}
+
+/* Lists */
+.policies ul {
+  padding-left: 20px;
+}
+
+.policies li {
+  margin-bottom: 10px;
+  color: #c9d1d9;
+}
+
+/* Divider */
+.policies hr {
+  margin: 48px 0;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Email Highlight */
+.policies strong {
+  color: #58a6ff;
+}
+
+/* Last Updated */
+.policies .policy-updated,
+.policies p:last-of-type {
+  margin-top: 48px;
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .policies {
+    padding: 40px 16px;
+  }
+
+  .policies h1 {
+    font-size: 2rem;
+  }
+
+  .policies h2 {
+    font-size: 1.35rem;
+  }
+}

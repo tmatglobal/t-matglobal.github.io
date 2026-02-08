@@ -3,15 +3,19 @@
   <channel>
     <title>T-Mat Global Updates</title>
     <link>https://www.t-matglobal.com/</link>
-    <description>Official updates from T-Mat Global.</description>
-    <language>en</language>
+    <description>Official news, announcements, and updates from T-Mat Global.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2026 00:00:00 GMT</lastBuildDate>
+    <generator>T-Mat Global RSS</generator>
 
     <item>
-      <title>Website launched</title>
+      <title>Website Launched</title>
       <link>https://www.t-matglobal.com/</link>
-      <guid>https://www.t-matglobal.com/#launch</guid>
-      <pubDate>Thu, 30 Jan 2026 00:00:00 +0000</pubDate>
-      <description>T-Mat Global website is now live.</description>
+      <guid isPermaLink="true">https://www.t-matglobal.com/</guid>
+      <pubDate>Thu, 30 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        T-Mat Global official website is now live, delivering global IT and consulting services.
+      ]]></description>
     </item>
 
   </channel>
